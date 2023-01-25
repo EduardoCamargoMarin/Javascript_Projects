@@ -1,0 +1,14 @@
+:root {
+    --borderFrame: 3px solid black;
+    --borderRadius: 20px;
+    --backgroundColor: #362626;
+    --fontColor: rgb(239, 223, 223);
+    --fontFamily: courier
+}
+
+body {
+    background-color: var(--backgroundColor);
+    color: var(--fontColor);
+    font-family: var(--fontFamily);
+}
+
