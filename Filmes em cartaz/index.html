@@ -11,16 +11,16 @@
     <form>
         <p>
             Titulo do Filme:
-            <input type="text" id="InputTitulo">
+            <input type="text" id="inputTitulo">
         </p>
         <p>
             Duração(min):
             <input type="number" id="duracao">
         </p>
-        <input type="submit" value="Converter em horas em minutos">
+        <input type="button" onclick="calcular()" value="Converter em horas em minutos">
     </form>
-    <h3></h3>
-    <h4></h4>
+    <h3 id="outputTitle"></h3>
+    <h4 id="outputTime"></h4>
 
     <script src="/Filmes em cartaz/index.js"></script>
 </body>
