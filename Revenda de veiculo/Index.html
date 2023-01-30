@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revenda de veículo</title>
+</head>
+<body>
+    <div>
+        <form>
+            <h2>Revenda de veículo</h2>
+            <div>
+                <label for="">Veículo:</label><br>
+                <input type="text" id="inputVehicle">
+            </div>
+            <div>
+                <label for="">Ano do veículo:</label><br>
+                <input type="number" id="inputYear">
+            </div>
+            <div>
+                <label for="">Preço (R$):</label><br>
+                <input type="number" id="inputPrice"><br>
+                <input style="width: 15em;" type="button" value="Ver promoção" id="submitValue" onclick="calcular()">
+            </div>
+            <div>
+                <h4 id="outputVehicle"></h4>
+                <h4 id="outputYear"></h4>
+                <h4 id="outputPrice"></h4>
+                <h4 id="outputPortion"></h4>
+            </div>
+
+        </form>
+    </div>
+    
+    <script src="/Revenda de veiculo/index.js"></script>
+</body>
+</html>
