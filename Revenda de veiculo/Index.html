@@ -11,20 +11,26 @@
         <form>
             <h2>Revenda de veículo</h2>
             <div>
-                <label for="">Veículo:</label><br>
-                <input type="text" id="inputVehicle">
+                <label for="">Marca do veículo*:</label><br>
+                <input maxlength="12" type="text" id="inputVehicle" placeholder="Marca..." required>
             </div>
             <div>
-                <label for="">Ano do veículo:</label><br>
-                <input type="number" id="inputYear">
+                <label for="">Modelo do veículo*:</label><br>
+                <input maxlength="5" type="text" id="inputVehicleModel" placeholder="Modelo..." required>
             </div>
             <div>
-                <label for="">Preço (R$):</label><br>
-                <input type="number" id="inputPrice"><br>
+                <label for="">Ano do veículo*:</label><br>
+                <input maxlength="4" type="text" id="inputYear" placeholder="YYYY" required>
+            </div>
+            <div>
+                <label for="">Preço (R$)*:</label><br>
+                <input maxlength="10" type="text" id="inputPrice" placeholder="Insira o valor..." required><br>
                 <input style="width: 15em;" type="button" value="Ver promoção" id="submitValue" onclick="calcular()">
+                <input type="reset" value="Pesquisar novamente">
             </div>
             <div>
                 <h4 id="outputVehicle"></h4>
+                <h4 id="outputVehicleModel"></h4>
                 <h4 id="outputYear"></h4>
                 <h4 id="outputPrice"></h4>
                 <h4 id="outputPortion"></h4>
