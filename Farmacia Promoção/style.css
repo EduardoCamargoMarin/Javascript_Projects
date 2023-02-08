@@ -1,0 +1,16 @@
+:root {
+    --backColor: #a4a4ff;
+    --border: 3px solid black;
+    --borderRadius: 50px;
+}
+
+body {
+    background-color: var(--backColor);
+    border: var(--border);
+}
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
