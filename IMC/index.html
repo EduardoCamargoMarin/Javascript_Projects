@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+</head>
+<body>
+    <div>
+        <form>
+            <label>Nome:</label>
+            <input id="inputName" type="text" placeholder="Insira o seu nome..."><br><br>
+            <label>Sexo:</label>
+            <input type="radio" name="sex" id="inputMale" required>Masculino
+            <input type="radio" name="sex" id="inputFemale" required>Feminino <br><br>
+            <label>Altura (metros):</label>
+            <input id="inputHeight" type="text" placeholder="Insira a sua altura..."><br><br>
+            <label>Peso (kg):</label>
+            <input id="inputWeight" type="text" placeholder="Insira o seu peso..."><br><br>
+            <input type="button" onclick="calcular()" value="Calcular o peso ideal">
+            <h3 id="outputValue"></h3>
+
+        </form>
+    </div>
+    
+    <script src="/IMC/index.js"></script>
+</body>
+</html>
