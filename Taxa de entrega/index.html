@@ -12,17 +12,26 @@
         <h1>JS Marmita</h1>
         <form>
             <label><b>Pedidos:</b> </label><br><br>
-            <input type="radio" name="food" required>Panqueca 4 queijos |
-            <input type="radio" name="food" required>Virado a paulista |
-            <input type="radio" name="food" required> Feijoada |
-            <input type="radio" name="food" required> bife acebolado |<br><br>
+            <input id="plate01" type="radio" name="food" required>Panqueca 4 queijos |
+            <input id="plate02" type="radio" name="food" required>Virado a paulista |
+            <input id="plate03" type="radio" name="food" required> Feijoada |
+            <input id="plate04" type="radio" name="food" required> bife acebolado |<br><br>
             <label><b>Forma de pagamento:</b> </label><br>
-            <input type="radio" name="pay" required>Dinheiro / PIX |
-            <input type="radio" name="pay" required>Cartão |<br><br>
-            <label>Local da entrega (Setor):</label><br>
-            <input type="text" placeholder="Ex: Setor X">
+            <input id="payMoney" type="radio" name="pay" required>Dinheiro / PIX |
+            <input id="payCard" type="radio" name="pay" required>Cartão |<br><br>
+            <label><b>Local da entrega (Setor):</b></label><br>
+            <input id="sectorA" type="radio" name="sector" required>Setor A |
+            <input id="sectorB" type="radio" name="sector" required>Setor B |
+            <input id="sectorC" type="radio" name="sector" required>Setor C |<br><br>
+            <label><b>Endereço:</b> </label><br>
+            <input id="inputAddress" style="width: 230px;" type="text" placeholder="Endereço..."><br><br>
+            <input onclick="calcular()" type="button" value="Calcular entrega">
             <h4>==================================================</h4>
-            <h3></h3>
+            <h3>Pedido:<span id="outputOrder"></span></h3>
+            <h3>Forma de pagamento:<span id="outputPayment"></span></h3>
+            <h3>Taxa de entrega:<span id="outputTip"></span></h3>
+            <h3>Total:<span id="outputTotal"></span></h3>
+            <h3>Endereço: <span id="outputAddress"></span></h3>
         </form>
     </div>
     <div>
@@ -36,5 +45,7 @@
         <li>Setor B => R$5,00</li>
         <li>Setor C => R$7,00</li>
     </div>
+
+    <script src="/Taxa de entrega/index.js"></script>
 </body>
 </html>
