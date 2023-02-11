@@ -28,16 +28,6 @@
 
 //========================================================
 
-//Jeito correto
-
-const namePrint = ['E','D','U','A','R','D','O']
-
-for (const i of namePrint) {
-
-  console.log(i)
-  
-}
-
 
 
 

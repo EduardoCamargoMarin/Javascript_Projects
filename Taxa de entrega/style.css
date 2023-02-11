@@ -1,0 +1,6 @@
+body {
+    background-color: #0f0f0f;
+    color: rgb(185, 185, 185);
+    display: flex;
+    gap: 30px;
+}
