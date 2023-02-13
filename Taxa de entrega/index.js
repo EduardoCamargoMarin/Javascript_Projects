@@ -13,7 +13,7 @@ function calcular() {
     const sectorB = document.getElementById('sectorB').checked
     const sectorC = document.getElementById('sectorC').checked
 
-    const inputAddress = document.getElementById('inputAddress').checked
+    const inputAddress = document.getElementById('inputAddress').value
 //==========================================================================
     //Saida de dados
     const outputOrder = document.getElementById('outputOrder')
@@ -22,5 +22,18 @@ function calcular() {
     const outputTotal = document.getElementById('outputTotal')
     const outputAddress = document.getElementById('outputAddress')
 
-    //falta adicionar o calculo e as condições
+    //Determinar os valores de cada item
+    //Precisa ser vinculada com o valor que o usuário determine.
+    plateBill01 = 15
+    plateBill02 = 13
+    plateBill03 = 20
+    plateBill04 = 17
+
+    sectorATip = 3
+    sectorBTip = 5
+    sectorCTip = 7
+
+    //Condições do programa
+
+    //Criar uma condição para caso tenha mais de uma marmita selecionada.
 }
