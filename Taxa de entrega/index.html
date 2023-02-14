@@ -12,13 +12,15 @@
         <h1>JS Marmita</h1>
         <form>
             <label><b>Pedidos:</b> </label><br><br>
-            <input id="plate01" type="checkbox" name="food" required>Panqueca 4 queijos |
-            <input id="plate02" type="checkbox" name="food" required>Virado a paulista |
-            <input id="plate03" type="checkbox" name="food" required> Feijoada |
-            <input id="plate04" type="checkbox" name="food" required> bife acebolado |<br><br>
+            <input id="plate01" type="checkbox" name="food" required><span></span> |
+            <input id="plate02" type="checkbox" name="food" required><span></span> |
+            <input id="plate03" type="checkbox" name="food" required> <span></span> |
+            <input id="plate04" type="checkbox" name="food" required> <span></span> |<br><br>
             <label><b>Forma de pagamento:</b> </label><br>
             <input id="payMoney" type="radio" name="pay" required>Dinheiro / PIX |
             <input id="payCard" type="radio" name="pay" required>Cartão |<br><br>
+            <label>Troco (R$):</label><br>
+            <input id="inputChange" type="text" placeholder="Valor do troco..."><br><br>
             <label><b>Local da entrega (Setor):</b></label><br>
             <input id="sectorA" type="radio" name="sector" required>Setor A |
             <input id="sectorB" type="radio" name="sector" required>Setor B |
@@ -36,15 +38,41 @@
     </div>
     <div>
         <!--Adicionar opção de escrever os pratos e vincular com o JS-->
-        <h1>Informações do prato</h1>
-        <li>Panqueca 4 queijos => R$15,00</li>
-        <li>Virado a paulista => R$13,00</li>
-        <li>Feijoada => R$20,00</li>
-        <li>Bife acebolado => R$ 17,00</li>
+        <div>
+            <h1>Adição de informação</h1>
+            <label>Prato 01:</label>
+            <input id="inputPlate01" type="text" placeholder="Insira o prato 01...">
+            <label>Valor:</label>
+            <input id="inputPrice01" type="text" placeholder="Insira o valor..."><br><br>
+            <label>Prato 02:</label>
+            <input id="inputPrice02" type="text" placeholder="Insira o prato 02...">
+            <label>Valor:</label>
+            <input id="inputPrice02" type="text" placeholder="Insira o valor..."><br><br>
+            <label>Prato 03:</label>
+            <input id="inputPlate03" type="text" placeholder="Insira o prato 03...">
+            <label>Valor:</label>
+            <input id="inputPrice03" type="text" placeholder="Insira o valor..."><br><br>
+            <label>Prato 04:</label>
+            <input id="inputPlate04" type="text" placeholder="Insira o prato 04...">
+            <label>Valor:</label>
+            <input id="inputPrice04" type="text" placeholder="Insira o valor..."><br><br>
+            <label>Setor A:</label>
+            <input id="inputSectorA" type="text" placeholder="Insira o valor..."><br><br>
+            <label>Setor B:</label>
+            <input id="inputSectorB" type="text" placeholder="Insira o valor..."><br><br>
+            <label>Setor C:</label>
+            <input id="inputSectorC" type="text" placeholder="Insira o valor..."><br><br>
+            <input type="button" onclick="addInfo()" value="Adicionar informações"> <!--Adicionar as informações para o codigo funcionar-->
+        </div>
+        <h1>Informações do prato</h1> <!--Adicionar as informações para o codigo funcionar-->
+        <li><span id="outputPlate01"></span> => R$<span id="outputPrice01"></span></li>
+        <li><span id="outputPlate02"></span> => R$<span id="outputPrice02"></span></li>
+        <li><span id="outputPlate03"></span> => R$<span id="outputPrice03"></span></li>
+        <li><span id="outputPlate04"></span> => R$<span id="outputPrice04"></span></li>
         <h1>Taxa de entrega</h1>
-        <li>Setor A => R$3,00</li>
-        <li>Setor B => R$5,00</li>
-        <li>Setor C => R$7,00</li>
+        <li>Setor A => R$<span id="outputSectorA"></span></li>
+        <li>Setor B => R$<span id="outputSectorA"></span></li>
+        <li>Setor C => R$<span id="outputSectorA"></span></li>
     </div>
 
     <script src="/Taxa de entrega/index.js"></script>
