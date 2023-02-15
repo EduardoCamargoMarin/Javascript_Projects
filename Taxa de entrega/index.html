@@ -12,10 +12,10 @@
         <h1>JS Marmita</h1>
         <form>
             <label><b>Pedidos:</b> </label><br><br>
-            <input id="plate01" type="checkbox" name="food" required><span></span> |
-            <input id="plate02" type="checkbox" name="food" required><span></span> |
-            <input id="plate03" type="checkbox" name="food" required> <span></span> |
-            <input id="plate04" type="checkbox" name="food" required> <span></span> |<br><br>
+            <input id="plate01" type="checkbox" name="food" required><span id="outputPlate01"></span> |
+            <input id="plate02" type="checkbox" name="food" required><span id="outputPlate02"></span> |
+            <input id="plate03" type="checkbox" name="food" required> <span id="outputPlate03"></span> |
+            <input id="plate04" type="checkbox" name="food" required> <span id="outputPlate04"></span> |<br><br>
             <label><b>Forma de pagamento:</b> </label><br>
             <input id="payMoney" type="radio" name="pay" required>Dinheiro / PIX |
             <input id="payCard" type="radio" name="pay" required>Cartão |<br><br>
@@ -45,7 +45,7 @@
             <label>Valor:</label>
             <input id="inputPrice01" type="text" placeholder="Insira o valor..."><br><br>
             <label>Prato 02:</label>
-            <input id="inputPrice02" type="text" placeholder="Insira o prato 02...">
+            <input id="inputPlate02" type="text" placeholder="Insira o prato 02...">
             <label>Valor:</label>
             <input id="inputPrice02" type="text" placeholder="Insira o valor..."><br><br>
             <label>Prato 03:</label>
@@ -65,14 +65,14 @@
             <input type="button" onclick="addInfo()" value="Adicionar informações"> <!--Adicionar as informações para o codigo funcionar-->
         </div>
         <h1>Informações do prato</h1> <!--Adicionar as informações para o codigo funcionar-->
-        <li><span id="outputPlate01"></span> => R$<span id="outputPrice01"></span></li>
-        <li><span id="outputPlate02"></span> => R$<span id="outputPrice02"></span></li>
-        <li><span id="outputPlate03"></span> => R$<span id="outputPrice03"></span></li>
-        <li><span id="outputPlate04"></span> => R$<span id="outputPrice04"></span></li>
+        <li><span id="outputFirstPlate01"></span> => R$<span id="outputPrice01"></span></li>
+        <li><span id="outputSecondPlate02"></span> => R$<span id="outputPrice02"></span></li>
+        <li><span id="outputThirdPlate03"></span> => R$<span id="outputPrice03"></span></li>
+        <li><span id="outputFourthPlate04"></span> => R$<span id="outputPrice04"></span></li>
         <h1>Taxa de entrega</h1>
         <li>Setor A => R$<span id="outputSectorA"></span></li>
-        <li>Setor B => R$<span id="outputSectorA"></span></li>
-        <li>Setor C => R$<span id="outputSectorA"></span></li>
+        <li>Setor B => R$<span id="outputSectorB"></span></li>
+        <li>Setor C => R$<span id="outputSectorC"></span></li>
     </div>
 
     <script src="/Taxa de entrega/index.js"></script>

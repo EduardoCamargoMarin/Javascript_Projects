@@ -21,16 +21,38 @@ function addInfo() {
     const outputPlateName03 = document.getElementById('outputPlate03')
     const outputPlateName04 = document.getElementById('outputPlate04')
 
-    const outputPriceValue01 = document.getElementById('outputPlate01')
-    const outputPriceValue02 = document.getElementById('outputPlate02')
-    const outputPriceValue03 = document.getElementById('outputPlate03')
-    const outputPriceValue04 = document.getElementById('outputPlate04')
+    const outputFirstPlate = document.getElementById('outputFirstPlate01')
+    const outputSecondPlate = document.getElementById('outputSecondPlate02')
+    const outputThirdPlate = document.getElementById('outputThirdPlate03')
+    const outputFourthPlate = document.getElementById('outputFourthPlate04')
+
+    const outputPriceValue01 = document.getElementById('outputPrice01')
+    const outputPriceValue02 = document.getElementById('outputPrice02')
+    const outputPriceValue03 = document.getElementById('outputPrice03')
+    const outputPriceValue04 = document.getElementById('outputPrice04')
 
     const outputSectorName01 = document.getElementById('outputSectorA')
     const outputSectorName02 = document.getElementById('outputSectorB')
     const outputSectorName03 = document.getElementById('outputSectorC')
 
-    
+    outputPlateName01.innerText = `${plateName01}`
+    outputPlateName02.innerText = `${plateName02}`
+    outputPlateName03.innerText = `${plateName03}`
+    outputPlateName04.innerText = `${plateName04}`
+
+    outputFirstPlate.innerText = `${plateName01}`
+    outputSecondPlate.innerText = `${plateName02}`
+    outputThirdPlate.innerText = `${plateName03}`
+    outputFourthPlate.innerText = `${plateName04}`
+
+    outputPriceValue01.innerText = `${platePrice01}`
+    outputPriceValue02.innerText = `${platePrice02}`
+    outputPriceValue03.innerText = `${platePrice03}`
+    outputPriceValue04.innerText = `${platePrice04}`
+
+    outputSectorName01.innerText = `${nameSectorA}`
+    outputSectorName02.innerText = `${nameSectorB}`
+    outputSectorName03.innerText = `${nameSectorC}`
 
 }
 
