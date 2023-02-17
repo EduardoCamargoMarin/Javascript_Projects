@@ -10,6 +10,8 @@ function calcular() {
 
 let amountLeft = money % 100 //Restante
 
+amountLeft = money % 50
+
 const notas100 = Math.floor(money / 100) // Calcula as notas de R$100,00 - arredondado para baixo
 const notas50 = Math.floor(money / 50) // Calcula as notas de R$50,00 - arredondado para baixo
 const notas20 = Math.floor(money / 20) // Calcula as notas de R$20,00 - arrendodado para baixo
