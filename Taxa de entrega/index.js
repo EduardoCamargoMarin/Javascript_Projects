@@ -64,7 +64,13 @@ function addInfo() {
 
 
 function calcular() {
-    //Entrada de dados
+    //Busca dos dados da outra função
+    const plateName0101 = document.getElementById('inputPlate01').value
+    const plateName0202 = document.getElementById('inputPlate02').value
+    const plateName0303 = document.getElementById('inputPlate03').value
+    const plateName0404 = document.getElementById('inputPlate04').value
+
+
     const plate01 = document.getElementById('plate01').checked
     const plate02 = document.getElementById('plate02').checked
     const plate03 = document.getElementById('plate03').checked
@@ -89,4 +95,20 @@ function calcular() {
     //Condições do programa
 
     //Criar uma condição para caso tenha mais de uma marmita selecionada.
+
+    if(plate01 == true) {
+        outputOrder.innerText = `${plateName0101}`
+    }
+    else if(plate02 == true) {
+        outputOrder.innerText = `${plateName0202}`
+    }
+    else if(plate03 == true) {
+        outputOrder.innerText = `${plateName0303}`
+    }
+    else if(plate04 == true) {
+        outputOrder.innerText = `${plateName0404}`
+    }
+    
+
 }
+
