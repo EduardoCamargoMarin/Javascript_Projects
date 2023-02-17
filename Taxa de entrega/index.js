@@ -1,4 +1,3 @@
-
 function addInfo() {
     //Entrada de dados para trazer as informações do menu
     const plateName01 = document.getElementById('inputPlate01').value
@@ -70,6 +69,15 @@ function calcular() {
     const plateName0303 = document.getElementById('inputPlate03').value
     const plateName0404 = document.getElementById('inputPlate04').value
 
+    const platePrice0101 = document.getElementById('inputPrice01').value
+    const platePrice0202 = document.getElementById('inputPrice02').value
+    const platePrice0303 = document.getElementById('inputPrice03').value
+    const platePrice0404 = document.getElementById('inputPrice04').value
+
+    const nameSectorAA = document.getElementById('inputSectorA').value
+    const nameSectorBB = document.getElementById('inputSectorB').value
+    const nameSectorCC = document.getElementById('inputSectorC').value
+
 
     const plate01 = document.getElementById('plate01').checked
     const plate02 = document.getElementById('plate02').checked
@@ -96,19 +104,147 @@ function calcular() {
 
     //Criar uma condição para caso tenha mais de uma marmita selecionada.
 
-    if(plate01 == true) {
+    if(plate01 == true && payMoney == true && sectorA == true) {
         outputOrder.innerText = `${plateName0101}`
+        outputPayment.innerText = `PIX`
+        outputTip.innerText = `R$${nameSectorAA}`
+        outputTotal.innerText = `R$${Number(platePrice0101)  + Number(nameSectorAA) }`
+        outputAddress.innerText = `${inputAddress}`
     }
-    else if(plate02 == true) {
+    else if(plate02 == true && payMoney == true && sectorA == true) {
         outputOrder.innerText = `${plateName0202}`
+        outputPayment.innerText = `PIX`
+        outputTip.innerText = `R$${nameSectorAA}`
+        outputTotal.innerText = `R$${Number(platePrice0202)  + Number(nameSectorAA) }`
+        outputAddress.innerText = `${inputAddress}`
     }
-    else if(plate03 == true) {
+    else if(plate03 == true && payMoney == true && sectorA == true) {
         outputOrder.innerText = `${plateName0303}`
+        outputPayment.innerText = `PIX`
+        outputTip.innerText = `R$${nameSectorAA}`
+        outputTotal.innerText = `R$${Number(platePrice0303) + Number(nameSectorAA)}`
+        outputAddress.innerText = `${inputAddress}`
     }
-    else if(plate04 == true) {
+    else if(plate04 == true && payMoney == true && sectorA == true) {
         outputOrder.innerText = `${plateName0404}`
+        outputPayment.innerText = `PIX`
+        outputTip.innerText = `R$${nameSectorAA}`
+        outputTotal.innerText = `R$${Number(platePrice0404) + Number(nameSectorAA)}`
+        outputAddress.innerText = `${inputAddress}`
+    }
+    else if(plate01 == true && payCard== true && sectorA == true) {
+        outputOrder.innerText = `${plateName0101}`
+        outputPayment.innerText = `Cartão`
+        outputTip.innerText = `R$${nameSectorAA}`
+        outputTotal.innerText = `R$${Number(platePrice0101) + Number(nameSectorAA)}`
+        outputAddress.innerText = `${inputAddress}`
+    }
+    else if(plate02 == true && payCard == true && sectorA == true) {
+        outputOrder.innerText = `${plateName0202}`
+        outputPayment.innerText = `Cartão`
+        outputTip.innerText = `R$${nameSectorAA}`
+        outputTotal.innerText = `R$${Number(platePrice0202) + Number(nameSectorAA)}`
+        outputAddress.innerText = `${inputAddress}`
+    }
+    else if(plate03 == true && payCard == true && sectorA == true) {
+        outputOrder.innerText = `${plateName0303}`
+        outputPayment.innerText = `Cartão`
+        outputTip.innerText = `R$${nameSectorAA}`
+        outputTotal.innerText = `R$${Number(platePrice0303) + Number(nameSectorAA)}`
+        outputAddress.innerText = `${inputAddress}`
+    }
+    else if(plate04 == true && payCard == true && sectorA == true) {
+        outputOrder.innerText = `${plateName0404}`
+        outputPayment.innerText = `Cartão`
+        outputTip.innerText = `R$${nameSectorAA}`
+        outputTotal.innerText = `R$${Number(platePrice0404) + Number(nameSectorAA)}`
+        outputAddress.innerText = `${inputAddress}`
+    }
+    else if(plate01 == true && payMoney == true && sectorB == true) {
+        outputOrder.innerText = `${plateName0101}`
+        outputPayment.innerText = `PIX`
+        outputTip.innerText = `R$${nameSectorBB}`
+        outputTotal.innerText = `R$${Number(platePrice0101)  + Number(nameSectorBB) }`
+        outputAddress.innerText = `${inputAddress}`
+    }
+    else if(plate02 == true && payMoney == true && sectorB == true) {
+        outputOrder.innerText = `${plateName0202}`
+        outputPayment.innerText = `PIX`
+        outputTip.innerText = `R$${nameSectorBB}`
+        outputTotal.innerText = `R$${Number(platePrice0202)  + Number(nameSectorBB) }`
+        outputAddress.innerText = `${inputAddress}`
+    }
+    else if(plate03 == true && payMoney == true && sectorB == true) {
+        outputOrder.innerText = `${plateName0303}`
+        outputPayment.innerText = `PIX`
+        outputTip.innerText = `R$${nameSectorBB}`
+        outputTotal.innerText = `R$${Number(platePrice0303) + Number(nameSectorBB)}`
+        outputAddress.innerText = `${inputAddress}`
+    }
+    else if(plate04 == true && payMoney == true && sectorB == true) {
+        outputOrder.innerText = `${plateName0404}`
+        outputPayment.innerText = `PIX`
+        outputTip.innerText = `R$${nameSectorBB}`
+        outputTotal.innerText = `R$${Number(platePrice0404) + Number(nameSectorBB)}`
+        outputAddress.innerText = `${inputAddress}`
+    }
+
+    else if(plate01 == true && payCard== true && sectorB == true) {
+        outputOrder.innerText = `${plateName0101}`
+        outputPayment.innerText = `Cartão`
+        outputTip.innerText = `R$${nameSectorBB}`
+        outputTotal.innerText = `R$${Number(platePrice0101) + Number(nameSectorBB)}`
+        outputAddress.innerText = `${inputAddress}`
+    }
+    else if(plate02 == true && payCard == true && sectorB == true) {
+        outputOrder.innerText = `${plateName0202}`
+        outputPayment.innerText = `Cartão`
+        outputTip.innerText = `R$${nameSectorBB}`
+        outputTotal.innerText = `R$${Number(platePrice0202) + Number(nameSectorBB)}`
+        outputAddress.innerText = `${inputAddress}`
+    }
+    else if(plate03 == true && payCard == true && sectorB == true) {
+        outputOrder.innerText = `${plateName0303}`
+        outputPayment.innerText = `Cartão`
+        outputTip.innerText = `R$${nameSectorBB}`
+        outputTotal.innerText = `R$${Number(platePrice0303) + Number(nameSectorBB)}`
+        outputAddress.innerText = `${inputAddress}`
+    }
+    else if(plate04 == true && payCard == true && sectorB == true) {
+        outputOrder.innerText = `${plateName0404}`
+        outputPayment.innerText = `Cartão`
+        outputTip.innerText = `R$${nameSectorBB}`
+        outputTotal.innerText = `R$${Number(platePrice0404) + Number(nameSectorBB)}`
+        outputAddress.innerText = `${inputAddress}`
+    }
+    else if(plate01 == true && payCard== true && sectorC == true) {
+        outputOrder.innerText = `${plateName0101}`
+        outputPayment.innerText = `Cartão`
+        outputTip.innerText = `R$${nameSectorCC}`
+        outputTotal.innerText = `R$${Number(platePrice0101) + Number(nameSectorCC)}`
+        outputAddress.innerText = `${inputAddress}`
+    }
+    else if(plate02 == true && payCard == true && sectorC == true) {
+        outputOrder.innerText = `${plateName0202}`
+        outputPayment.innerText = `Cartão`
+        outputTip.innerText = `R$${nameSectorCC}`
+        outputTotal.innerText = `R$${Number(platePrice0202) + Number(nameSectorCC)}`
+        outputAddress.innerText = `${inputAddress}`
+    }
+    else if(plate03 == true && payCard == true && sectorC == true) {
+        outputOrder.innerText = `${plateName0303}`
+        outputPayment.innerText = `Cartão`
+        outputTip.innerText = `R$${nameSectorCC}`
+        outputTotal.innerText = `R$${Number(platePrice0303) + Number(nameSectorCC)}`
+        outputAddress.innerText = `${inputAddress}`
+    }
+    else if(plate04 == true && payCard == true && sectorC == true) {
+        outputOrder.innerText = `${plateName0404}`
+        outputPayment.innerText = `Cartão`
+        outputTip.innerText = `R$${nameSectorCC}`
+        outputTotal.innerText = `R$${Number(platePrice0404) + Number(nameSectorCC)}`
+        outputAddress.innerText = `${inputAddress}`
     }
     
 
 }
-
