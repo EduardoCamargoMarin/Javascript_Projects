@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parquimetro</title>
+</head>
+<body>
+    
+    <div>
+        <table style="border:1px solid black">
+            <tr>
+                <h1>Informações de Valores</h1>
+            </tr>
+            
+            <tr>
+                <th>Valor(R$)</th>
+                <th>Tempo (min)</th>
+            </tr>
+            <tr>
+                <th>1,00</th>
+                <th>30</th>
+            </tr>
+            <tr>
+                <th>2,00</th>
+                <th>60</th>
+            </tr>
+            <tr>
+                <th>4,00</th>
+                <th>180</th>
+            </tr>
+        </table>
+        
+    </div>
+    <div>
+        <form>
+            <h1>Parquimetro</h1>
+            <label>Valor (R$):</label><br>
+            <input id="inputMoney" type="text" placeholder="Insira o valor a depositar" required><br><br>
+            <input onclick="calcular()" type="button" value="Confirmar depósito">
+            <h3 id="outputTime"></h3>
+            <h3 id="outputChange"></h3>
+        </form>
+    </div>
+
+    <script src="/Parquimetro/index.js"></script>
+</body>
+</html>
