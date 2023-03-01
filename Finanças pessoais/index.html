@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finanças pessoais</title>
+</head>
+<body>
+    <div>
+        <h1>Programa finanças pessoais</h1>
+        <form>
+            <div>
+                <label>Orçamento mensal (R$):</label>
+                <input id="inputSalary" type="text">
+            </div>
+            <div>
+                <label>Descrição da conta:</label>
+                <input id="inputBillName" type="text">
+            </div>
+            <div>
+                <label>Valor a pagar (R$):</label>
+                <input id="inputBillPrice" type="text">
+            </div>
+            <input type="button" onclick="calcular()">
+
+
+        </form>
+        <pre id="outputBillName"></pre>
+        <pre id="outputBillPrice"></pre>
+        <pre id="outputSalary"></pre>
+    </div>
+
+    <script src="/Finanças pessoais/index.js"></script>
+</body>
+</html>
