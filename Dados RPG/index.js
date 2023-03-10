@@ -28,12 +28,12 @@ console.log(`===========\nD12 RESULT: ${d12Result + 1}`)
 console.log(`===========\nD20 RESULT: ${d20Result + 1}\n===========`)
 }
 else {
-console.log(`===========\nD4 RESULT: ${d4Result + 1}`)
-console.log(`===========\nD6 RESULT: ${d6Result + 1}`)
-console.log(`===========\nD8 RESULT: ${d8Result + 1}`)
-console.log(`===========\nD10 RESULT: ${d10Result + 1}`)
-console.log(`===========\nD12 RESULT: ${d12Result + 1}`)
-console.log(`===========\nD20 RESULT: ${d20Result + 1}\n===========`)
+console.log(`===========\nD4 RESULT: ${d4Result}`)
+console.log(`===========\nD6 RESULT: ${d6Result}`)
+console.log(`===========\nD8 RESULT: ${d8Result}`)
+console.log(`===========\nD10 RESULT: ${d10Result}`)
+console.log(`===========\nD12 RESULT: ${d12Result}`)
+console.log(`===========\nD20 RESULT: ${d20Result}\n===========`)
 }
 
 
