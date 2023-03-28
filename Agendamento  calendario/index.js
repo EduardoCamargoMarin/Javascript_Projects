@@ -1,5 +1,4 @@
 //Criar uma aplicação que o usuário selecione a data marcada para o proprietário checar os agendamentos, porém não atende dois clientes ao mesmo tempo.
-//Utilizar um sistema de calendário com TRY CATCH
 
 //======================================================
 //Criar o calendário.
@@ -26,15 +25,21 @@ class appoitmentClient02 {
         this.time = time;
     }}
 
-let clientAgenda01 = new appoitmentClient01(calendar[1], week[2], date[30], time[7])
-let clientAgenda02 = new appoitmentClient02()
-console.table(clientAgenda01)
+let clientAgenda01 = new appoitmentClient01(calendar[1], week[2], date[30], time[7] + 'h')
+let clientAgenda02 = new appoitmentClient02(calendar[1], week[2], date[30], time[7] + 'h')
 
 
-//validar se  as datas não condiz com 2 clientes (try catch)
 
-try {
-    let 
-} catch (error) { // Precisa finalizar!!
-    
+if(clientAgenda01.month === calendar[1] && clientAgenda01.date === date[30]) {
+        console.error('Error')
 }
+if(clientAgenda01.month === clientAgenda02.month && clientAgenda01.week === clientAgenda02.week && clientAgenda01.date === clientAgenda02.date && clientAgenda01.time === clientAgenda02.time){
+    console.error('Horário já possui agendamento')
+}
+
+
+
+
+
+
+
