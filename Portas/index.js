@@ -16,4 +16,5 @@ else{
 }
 
 //A regra de itens que abrem portas nos jogos se baseiam em itens que possuem o mesmo codigo para a confirmação.
+//Para não gerar o mesmo hash e criar um erro, é necessário criar uma associação das hashs em variaveis diferentes.
 
