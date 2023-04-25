@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="clientName" placeholder="Cliente">
+    <input type="text" id="clientCPF" placeholder="CPF">
+    <input type="text" id="productName" placeholder="Produto">
+    <input type="text" id="price" placeholder="R$">
+    <input type="text" id="payment" placeholder="Pagamento">
+    <input type="button" onclick="registrar()" value="Registrar atendimento">
+    <input type="button" id="result" value="Resultado">
+    <div>
+        Ultimo Atendimento <br>
+        <table>
+            <tr>
+                <td>Cliente |</td>
+                <td>CPF |</td>
+                <td>Produto |</td>
+                <td>Valor |</td>
+                <td>Pagamento </td>
+            </tr>
+        </table>
+        <div>
+            <span id="outputClientName"></span>
+            <span id="outputCPF"></span>
+            <span id="outputProduct"></span>
+            <span id="outputPrice"></span>
+            <span id="outputPayment"></span>
+        </div>
+        <div id="tabela"><span id="report"></span></div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
