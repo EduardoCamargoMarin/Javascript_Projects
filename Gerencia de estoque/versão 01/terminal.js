@@ -60,3 +60,10 @@ console.table(sectorA_products.concat(sectorB_products)) // concat se quiser jun
 
 
 //==========================================================================================
+//Filtrar apenas os itens que foram adicionados no dia 15/04/2023
+
+    let date15Product = [A_001, A_003, B_002, B_004]
+
+    console.table(date15Product)
+
+    
