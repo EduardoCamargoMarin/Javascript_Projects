@@ -33,7 +33,7 @@ function registrar() {
 //                   Parte 02
 // ==================================================
 
-let attendanciesReport = []
+let attendanciesReport = [] //Dados ficam armazenados na array
 
 attendanciesReport.push(clientName, clientCPF,productName,productPrice,payment)
 
@@ -46,8 +46,22 @@ btn.addEventListener("click", () =>{
             report.innerText = `${i+1}° ${aa}`
         })
     }
+})
+let tabela = document.getElementById("tabela").getElementsByTagName("tbody")[0]
+let novaLinha = tabela.insertRow(tabela.length)
+let celula1 = novaLinha.insertCell(0)
+let celula2 = novaLinha.insertCell(1)
+let celula3 = novaLinha.insertCell(2)
+let celula4 = novaLinha.insertCell(3)
+let celula5 = novaLinha.insertCell(4)
 
-})}
+celula1.innerHTML = `${clientName}`
+celula2.innerHTML = `${clientCPF}`
+celula3.innerHTML = `${productName}`
+celula4.innerHTML = `${productPrice}`
+celula5.innerHTML = `${payment}`
+
+}
 
 //Precisa finalizar - está trazendo apenas o ultimo elemento.
 

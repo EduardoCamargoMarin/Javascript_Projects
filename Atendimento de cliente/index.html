@@ -16,7 +16,14 @@
     <input type="button" id="result" value="Resultado">
     <div>
         Ultimo Atendimento <br>
-        <table>
+        <div>
+            <span id="outputClientName"></span>
+            <span id="outputCPF"></span>
+            <span id="outputProduct"></span>
+            <span id="outputPrice"></span>
+            <span id="outputPayment"></span>
+        </div>
+        <table id="tabela">
             <tr>
                 <td>Cliente |</td>
                 <td>CPF |</td>
@@ -25,14 +32,10 @@
                 <td>Pagamento </td>
             </tr>
         </table>
-        <div>
-            <span id="outputClientName"></span>
-            <span id="outputCPF"></span>
-            <span id="outputProduct"></span>
-            <span id="outputPrice"></span>
-            <span id="outputPayment"></span>
+
+        
         </div>
-        <div id="tabela"><span id="report"></span></div>
+
     </div>
 
     <script src="./index.js"></script>
