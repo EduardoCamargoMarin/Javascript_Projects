@@ -1,2 +1,2 @@
-# Aplica-o_JS
-Estudos em JS - repositório de varios exercícios do cotidiano
+# Javascript_Projects
+A collection of many applications regarding Javascript, where I develop my own projects focus on especifics scenarios in the daily basis.
